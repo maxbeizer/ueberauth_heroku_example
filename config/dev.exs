@@ -41,3 +41,6 @@ config :ueberauth_heroku_example, UeberauthHerokuExample.Repo,
   database: "ueberauth_heroku_example_dev",
   hostname: "localhost",
   pool_size: 10
+
+
+import_config "dev.secret.exs"
