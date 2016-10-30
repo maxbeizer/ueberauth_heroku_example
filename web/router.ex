@@ -19,6 +19,14 @@ defmodule UeberauthHerokuExample.Router do
     get "/", PageController, :index
   end
 
+  scope "/auth", UeberauthHerokuExample do
+    pipe_through :browser
+
+    get "/:identity", AuthController, :request
+    get "/:identity/callback", AuthController, :callback
+    delete "/logout", AuthController, :delete
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", UeberauthHerokuExample do
   #   pipe_through :api
