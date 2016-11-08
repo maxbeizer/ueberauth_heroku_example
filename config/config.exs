@@ -28,5 +28,7 @@ import_config "#{Mix.env}.exs"
 
 config :ueberauth, Ueberauth,
   providers: [
-    heroku: { Ueberauth.Strategy.Heroku, [] },
+    heroku: { Ueberauth.Strategy.Heroku, [
+        default_scope: "global"
+      ]},
   ]
