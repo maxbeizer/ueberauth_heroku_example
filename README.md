@@ -18,8 +18,7 @@ config :ueberauth, Ueberauth.Strategy.Heroku.OAuth,
   * Create and migrate your database with `mix ecto.create`
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  * Now you can visit [`localhost:4000/auth/heroku`](http://localhost:4000/auth/heroku) from your browser.
 
 ## License
 
